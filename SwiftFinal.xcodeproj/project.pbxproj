@@ -13,6 +13,7 @@
 		CCA1FA2D1CDAE46F00C412A1 /* SwiftFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCA1FA2B1CDAE46F00C412A1 /* SwiftFinal.xcdatamodeld */; };
 		CCA1FA2F1CDAE46F00C412A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA1FA2E1CDAE46F00C412A1 /* Assets.xcassets */; };
 		CCA1FA321CDAE46F00C412A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA1FA301CDAE46F00C412A1 /* LaunchScreen.storyboard */; };
+		CCA1FA3A1CDAEC2600C412A1 /* QuizClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1FA391CDAEC2600C412A1 /* QuizClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CCA1FA2E1CDAE46F00C412A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA1FA311CDAE46F00C412A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCA1FA331CDAE46F00C412A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA1FA391CDAEC2600C412A1 /* QuizClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CCA1FA241CDAE46F00C412A1 /* AppDelegate.swift */,
 				CCA1FA261CDAE46F00C412A1 /* ViewController.swift */,
 				CCA1FA281CDAE46F00C412A1 /* Main.storyboard */,
+				CCA1FA391CDAEC2600C412A1 /* QuizClass.swift */,
 				CCA1FA2E1CDAE46F00C412A1 /* Assets.xcassets */,
 				CCA1FA301CDAE46F00C412A1 /* LaunchScreen.storyboard */,
 				CCA1FA331CDAE46F00C412A1 /* Info.plist */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					CCA1FA201CDAE46F00C412A1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 74Y9M9BEN2;
 					};
 				};
 			};
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA1FA271CDAE46F00C412A1 /* ViewController.swift in Sources */,
+				CCA1FA3A1CDAEC2600C412A1 /* QuizClass.swift in Sources */,
 				CCA1FA2D1CDAE46F00C412A1 /* SwiftFinal.xcdatamodeld in Sources */,
 				CCA1FA251CDAE46F00C412A1 /* AppDelegate.swift in Sources */,
 			);
@@ -253,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.chapman.SwiftFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.chapman.SwiftFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
